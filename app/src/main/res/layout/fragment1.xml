@@ -12,10 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="134dp"
         android:background="@color/colorXam"
-        android:gravity="right"
+
         android:text="0"
         android:textColor="@color/colorWhite"
-
+        android:singleLine="true"
+        android:gravity="right|center_vertical"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:typeface="serif"
         android:textSize="80dp"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="0dp" />

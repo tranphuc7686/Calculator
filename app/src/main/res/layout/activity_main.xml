@@ -7,10 +7,10 @@
     android:layout_height="match_parent"
     tools:context="com.example.admin.trainningandroid.MainActivity"
     android:orientation="vertical">
-<fragment
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:name="com.example.admin.trainningandroid.Fragment"></fragment>
+<!--<fragment-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:name="com.example.admin.trainningandroid.Fragment"></fragment>-->
 
 
 </LinearLayout>
