@@ -2,6 +2,9 @@ package com.example.admin.trainningandroid;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -10,17 +13,41 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button btn9,btn8,btn7,btn6,btn5,btn4,btn3,btn2,btn1,btnCong,btnTru,btnNhan,btnChia,btnAc,btnBang,btnCham,btnSo0;
     private TextView txtCal;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getSupportActionBar().hide();
-        setContentView(R.layout.activity_main);
+
+
         addControl();
         addEvents();
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.main_menu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.mniHistory:{
+
+
+                break;
+            }
+            case R.id.mniExit: {
+                finish();
+                break;
+            }
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     private void addControl() {
         btn9 = findViewById(R.id.button28);
@@ -41,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnCham = findViewById(R.id.button36);
         btnBang = findViewById(R.id.button35);
         txtCal = findViewById(R.id.textView2);
+
     }
 
     private void addEvents() {
